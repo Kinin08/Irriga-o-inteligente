@@ -42,4 +42,4 @@ npm run start:dev
 
 Servidor rodará em:
 
-http://localhost:8080/char/sus
+http://localhost:8080/charq/sus

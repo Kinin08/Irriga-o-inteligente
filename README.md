@@ -24,7 +24,7 @@ O projeto tem como objetivo capturar dados enviados pelo Arduino via USB (Serial
 ## 🚀 Como clonar o projeto
 
 ```bash
-git clone <URL_DO_REPOSITORIO>
+git clone  https://github.com/Kinin08/Irriga-o-inteligente.git
 cd CharqScience
 ```
 ## Instale dependencias
@@ -42,4 +42,4 @@ npm run start:dev
 
 Servidor rodará em:
 
-http://localhost:8080
+http://localhost:8080/char/sus

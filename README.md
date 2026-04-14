@@ -14,18 +14,24 @@ O projeto tem como objetivo capturar dados enviados pelo Arduino via USB (Serial
 
 - Arduino (C/C++)
 - Node.js
-- Express.js
-- EJS (template engine)
-- SerialPort (@serialport)
 - HTML + CSS + JavaScript
 
 ---
 
-## 🚀 Como clonar o projeto
+# Como usar o projeto
 
+## Clone o projeto e abra a pasta CharqScience
 ```bash
 git clone  https://github.com/Kinin08/Irriga-o-inteligente.git
 cd CharqScience
+```
+## Conect um arduino mega 2560
+### ajeite conforme sua porta
+```bash
+const port = new SerialPort({
+    path: "SUA_PORTA",
+    baudRate: 9600,
+})
 ```
 ## Instale dependencias
 ```bash

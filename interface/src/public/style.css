@@ -1,0 +1,64 @@
+/* Fundo geral */
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #0f172a; /* azul escuro moderno */
+    color: #e2e8f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Caixa principal */
+.container {
+    background: #111827;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 0 25px rgba(0, 255, 170, 0.15);
+    text-align: center;
+    width: 300px;
+}
+
+/* Título (valor do Arduino) */
+h1 {
+    font-size: 48px;
+    margin: 0;
+    color: #22c55e; /* verde tipo sensor ligado */
+    text-shadow: 0 0 10px rgba(34, 197, 94, 0.6);
+}
+
+/* texto menor */
+p {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #94a3b8;
+}
+
+/* animação de “atividade” */
+h1::after {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 10px;
+    background: #22c55e;
+    border-radius: 50%;
+    margin: 10px auto 0;
+    animation: pulse 1.2s infinite;
+}
+
+/* efeito pulsar */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(2);
+        opacity: 0.3;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}

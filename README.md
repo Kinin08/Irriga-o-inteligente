@@ -21,15 +21,25 @@ O projeto tem como objetivo capturar dados enviados pelo Arduino via USB (Serial
 
 ---
 
----
+## 🚀 Como clonar o projeto
 
-## ⚙️ Como funciona
+```bash
+git clone <URL_DO_REPOSITORIO>
+cd CharqScience
+```
+## Instale dependencias
+```bash
+npm install
+```
+## Entre no arquivo
 
-```text
-Arduino → envia dados via Serial (USB)
-        ↓
-Node.js (SerialPort) lê os dados
-        ↓
-Express armazena e expõe os dados
-        ↓
-EJS renderiza na página web
+```bash
+cd interface
+```
+
+## Rode o projeto
+npm run start:dev
+
+Servidor rodará em:
+
+http://localhost:8080
